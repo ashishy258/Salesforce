@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <lightning-input type="checkbox" label="checkbox" onchange={handleChange} ></lightning-input>
+        <template if:true={check} >
+            <div>I am here</div>
+        </template>
+        <template for:each={array} for:item='a' >
+            <p key={a}>{a}</p>
+        </template>
+        <h>------------from iterator------------------</h>
+        <template iterator:it={array} >
+            <p key={it.value}>{it.value}</p>
+        </template>
+    </lightning-card>
+</template>

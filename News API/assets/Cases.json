@@ -1,0 +1,264 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "AccountId": "@AccountRef1",
+            "Origin": "Web",
+            "Status": "New",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "AccountId": "@AccountRef2",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef4"
+            },
+            "AccountId": "@AccountRef3",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef5"
+            },
+            "AccountId": "@AccountRef3",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef6"
+            },
+            "AccountId": "@AccountRef3",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef7"
+            },
+            "AccountId": "@AccountRef4",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef8"
+            },
+            "AccountId": "@AccountRef4",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef9"
+            },
+            "AccountId": "@AccountRef4",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef10"
+            },
+            "AccountId": "@AccountRef5",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef11"
+            },
+            "AccountId": "@AccountRef5",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef12"
+            },
+            "AccountId": "@AccountRef8",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef13"
+            },
+            "AccountId": "@AccountRef8",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef14"
+            },
+            "AccountId": "@AccountRef8",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef15"
+            },
+            "AccountId": "@AccountRef8",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef16"
+            },
+            "AccountId": "@AccountRef9",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef17"
+            },
+            "AccountId": "@AccountRef9",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef18"
+            },
+            "AccountId": "@AccountRef9",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef19"
+            },
+            "AccountId": "@AccountRef10",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef20"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Web",
+            "Status": "New",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef21"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef22"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Web",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef23"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef24"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef25"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Phone",
+            "Status": "Closed",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef26"
+            },
+            "AccountId": "@AccountRef11",
+            "Origin": "Web",
+            "Status": "New",
+            "CreatedDate": "2020-03-19T18:28:48.000+0000"
+        }
+    ]
+}

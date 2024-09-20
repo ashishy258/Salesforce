@@ -1,0 +1,74 @@
+<template>
+    <div class="slds-box slds-theme_default">
+        <lightning-card  title="Child Accounts">
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr class="slds-line-height_reset slds-text-title_caps">
+                        <th  class="slds-is-resizable" scope="col">
+                            <div class="slds-truncate" title="action">
+                                B
+                            </div>
+                        </th>
+                        <th  class="slds-is-resizable" scope="col">
+                            <div class="slds-truncate" title="Name">
+                                Name
+                            </div>
+                        </th>
+                        <!-- <th  class="slds-is-resizable" scope="col">
+                            <div class="slds-truncate" title="Account Number">
+                                Account Number
+                            </div>
+                        </th>
+                        <th  class="slds-is-resizable" scope="col">
+                            <div class="slds-truncate" title="Industry">
+                                Industry
+                            </div>
+                        </th>
+                        <th class="slds-is-resizable" scope="col">
+                            <div class="slds-truncate" title="Phone">
+                                Phone
+                            </div>
+                        </th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <template if:true={accounts}>
+                        <template for:each={accounts} for:item="acc">
+                
+
+                            
+                            <tr key={acc.Id} >
+                                <th scope="row" data-label="action">
+                                    <div class="slds-truncate" title={acc.Id}>
+                                        <lightning-button label="+" name={acc.Id} onclick={showCases} ></lightning-button>
+                                    </div>
+                                </th>
+                                <th scope="row" data-label="Name">
+                                    <div class="slds-truncate" title={acc.Name}>{acc.Name}</div>
+                                </th>
+                                <!-- <th scope="row" data-label="Account Number">
+                                    <div class="slds-truncate" title={acc.AccountNumber}>{acc.AccountNumber}</div>
+                                </th>
+                                <th scope="row" data-label="Industry">
+                                    <div class="slds-truncate" title={acc.Industry}>{acc.Industry}</div>
+                                </th>
+                                <th scope="row" data-label="Phone">
+                                    <template if:true={acc.Phone}>
+                                    <div class="slds-truncate" title={acc.Phone}>{acc.Phone}</div>
+                                    </template>
+                                </th> -->
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+            <template if:true={caseToShow}>
+                <template for:each={caseToShow} for:item="cas">
+                    <p key={cas.Id}>{cas.Id} --- {cas.Account.Name} </p>
+
+                </template>
+            </template>
+            </lightning-card>
+            </div>
+
+</template>

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Generic Datatable 123">
+        <template lwc:if={isSearchable}>
+            <lightning-layout>
+                <lightning-layout-item size="3" alignment-bump="left" padding="around-small">
+                    <lightning-input name="enter-search" placeholder="Search..." value={inputValue} onkeyup={handleSearchChange} type="search">
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <div class="slds-var-p-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={recordsFinal}
+                columns={columns}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+        </div>
+        <template lwc:if={isPagination}>
+            <div class="slds-var-p-around_medium">
+                <c-pagination record-size={recordSize} records={records} onupdate={handlePagination}></c-pagination>
+            </div>
+        </template>
+    </lightning-card>
+</template>

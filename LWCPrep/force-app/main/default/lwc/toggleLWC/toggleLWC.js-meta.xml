@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>  
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="recId" label="Record Id" type="String" default=""></property>
+            <property name="showSavedItems" type="Boolean" label="Show Saved Items Dropdown" default="false"/> 
+            <property name="alignElement" type="String" label="Align Component" datasource="Left, Right" default="Left"/>
+            <property name="noOfRecordsInDropdown" type="String" label="Enter number of records to show in dropdown" datasource="2,3,4,5,6,7,8,9,10" default="3"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

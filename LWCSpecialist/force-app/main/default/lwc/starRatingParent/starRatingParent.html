@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-var-m-around_medium">
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <c-star-ratings
+                onratingchange={handleStarRatingClick}
+                number-of-stars="5"
+                color="#F68536"
+                rating={currentRating}
+                show-half-stars="true"
+                size="medium"
+                ></c-star-ratings>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

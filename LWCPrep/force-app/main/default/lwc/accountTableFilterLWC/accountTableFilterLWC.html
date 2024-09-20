@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Filter By:">
+        <template if:false={isPicklistArrived}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </template>
+        <template if:true={isPicklistArrived}>
+            <lightning-layout>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-combobox value={selectedCountry} placeholder="Country" options={countryOptions}
+                        onchange={handleCountryChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="around-small">
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="around-small">
+                    <lightning-combobox value={selectedState} disabled={isStateDisabled} placeholder="State Code" options={stateOptions}
+                        onchange={handleStateChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>        
+    </lightning-card>
+</template>

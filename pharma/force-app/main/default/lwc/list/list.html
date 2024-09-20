@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Products List" icon-name="custom:custom58">
+        
+    <div class="slds-m-around_small">
+        <div >
+            <c-search onsearch={handleEvent} ></c-search>
+        </div>
+        
+    
+            <div >
+                <template if:true={drugRecord}>
+                    <div class="slds-grid slds-wrap" >
+                        <template for:each={drugRecord} for:item="item">
+                            <div style="border:solid 2px black; margin:5px;" class="slds-col slds-size_1-of-3" key={item.Id} >
+                                <c-tile key={item.Id} drug-record={item} ></c-tile>
+                            </div>
+                            
+                        </template>
+                    </div>
+                    
+                </template>
+            </div>
+            
+        
+    </div>
+</lightning-card>
+</template>

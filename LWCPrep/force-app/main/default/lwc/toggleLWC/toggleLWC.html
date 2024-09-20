@@ -1,0 +1,60 @@
+<template>
+  <div class={mainContainerClass}>
+      <template lwc:if={saveDisabled}>
+          <button class={saveButtonVariant} onclick={handleSaveClick} disabled=''>
+              <lightning-icon icon-name="utility:bookmark" variant="inverse" size="xx-small"></lightning-icon>&nbsp;
+              Saved
+          </button>
+      </template>
+      <template lwc:else>
+          <button class={saveButtonVariant} onclick={handleSaveClick}>
+              <lightning-icon icon-name="utility:bookmark" variant={iconVariant} class="bookmarkIcon" size="xx-small"></lightning-icon>&nbsp;
+              {saveButtonLabel}
+          </button>
+      </template>
+      <template lwc:if={showSavedItems}>
+          <div class="dropdownSection slds-var-p-left_xx-small">
+              <button class="dropdownButton slds-button slds-button_neutral slds-var-p-left_small slds-var-p-right_small" onclick={handleDropdownClick}>
+                  <lightning-icon icon-name="utility:chevrondown" variant="border-filled" alternative-text="Dropdown" title="dropDown" size="xx-small"></lightning-icon>
+              </button>
+              <template lwc:if={showPopover}>
+                  <section aria-label="Dialog title" aria-describedby="popover-body-id" class="dropdownSectionContent slds-popover slds-nubbin_top-right" role="dialog">
+                      <div id="popover-body-id" class="slds-text-align_left slds-popover__body">
+                          <article class="slds-card">
+                              <div class="header slds-card__header slds-grid slds-var-m-bottom_xx-small">
+                              <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                  <div class="slds-media__body slds-card__header-title">
+                                      <span>MY SAVED ITEMS</span>
+                                  </div>
+                              </header>
+                              </div>
+                              <div class="slds-var-m-bottom_xxx-small slds-var-m-top_xxx-small slds-card__body slds-card__body_inner">
+                                  <ul class="slds-scrollable slds-has-block-links section-content">
+                                      <template lwc:if={isDataExist}>
+                                          <template for:each={savedItemRecordsList} for:item="savedRecord">
+                                              <li class="slds-var-p-left_medium slds-var-p-top_x-small slds-var-p-bottom_x-small" key={savedRecord.Id}>
+                                                  <a target="_blank" href={savedRecord.Target_URL__c}>
+                                                      <h6>{savedRecord.Name}</h6>
+                                                      <p>{savedRecord.Type__c}</p>
+                                                  </a>
+                                              </li>
+                                          </template>
+                                      </template>
+                                      <template lwc:else>
+                                          <p class="slds-align_absolute-center slds-var-p-around_medium">No Saved Items Yet</p>
+                                      </template>
+                                  </ul>
+                              </div>
+                              <footer class="footer slds-card__footer slds-var-m-top_xxx-small">
+                                  <div class="showPointer" onclick={viewSavedItemsRecords}>
+                                      <p>View All Saved Items</p>
+                                  </div>
+                              </footer>
+                          </article>
+                      </div>
+                  </section>
+              </template>
+          </div>
+      </template>
+  </div>
+</template>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "58ca958b-187b-40b8-a327-bd03c01bf9c2",
+  "appPageId" : "77c302db-2adc-4665-a391-b8cfe22bfeed",
+  "configurationTags" : [ ],
+  "id" : "6b6bcdd6-4d98-4b88-b2a5-544ca2082bef",
+  "label" : "App Central",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-app-central",
+  "type" : "route",
+  "urlPrefix" : "app-central"
+}

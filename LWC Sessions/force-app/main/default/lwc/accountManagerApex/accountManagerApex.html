@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Account Manager Apex">
+        
+            <template if:true={success}>
+                <ul>
+                    <div class="slds-var-p-around_medium lgc-bg">
+                        <template for:each={accounts.data} for:item="account">
+                            <li key={account.Id}>
+                                
+                                    <lightning-tile href="/path/to/somewhere">
+                                        <p class="slds-truncate" title={account.Name}>{account.Name}</p>
+                                        <p class="slds-truncate" title={account.Phone}>{account.Phone}</p>
+                                        <p class="slds-truncate" title={account.Website}>{account.Website}</p>
+                                    </lightning-tile>
+                                    <br>
+                                
+                            </li>
+                        </template>
+                    </div>
+                </ul>
+            </template>
+        
+    </lightning-card>
+</template>

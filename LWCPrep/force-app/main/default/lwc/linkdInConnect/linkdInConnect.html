@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="LinkedIn">
+        <lightning-textarea name="input3" label="Textarea field with a placeholder" placeholder="type here...">
+        </lightning-textarea>
+
+        <!-- Neutral variant (default) -->
+        <lightning-button label="Authenticate" title="authenticate" onclick={handleAuthenticate} class="slds-m-left_x-small">
+        </lightning-button>
+        <!-- Brand variant: Identifies the primary action in a group of buttons -->
+        <lightning-button variant="brand" label="Post" title="post" onclick={handlePost}
+            class="slds-m-left_x-small"></lightning-button>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Simple Calculator" icon-name="standard:formula" >
+        <lightning-input type="number" name="firstNumber" label="First Number" onchange={handleChange} ></lightning-input>
+        <lightning-input type="number" name="secondNumber" label="Second Number" onchange={handleChange} ></lightning-input>
+        <!-- Button group: simple buttons -->
+        <lightning-button-group>
+            <lightning-button label="Add +" onclick={add}></lightning-button>
+            <lightning-button label="Subtract -" onclick={subtract} ></lightning-button>
+            <lightning-button label="Multiply X" onclick={multiply} ></lightning-button>
+            <lightning-button label="Divide %" onclick={divide} ></lightning-button>
+        </lightning-button-group>
+        <div>the result is : {result}</div>
+        <h>-------------------------------</h>
+        <lightning-input type="checkbox" label="show previous results" onchange={showArrayResult} ></lightning-input>
+        <template if:true={check}>
+            <template for:each={arrayResult} for:item="ar">
+                <p key={ar}>{ar}</p>
+            </template>
+        </template>
+    </lightning-card>
+</template>

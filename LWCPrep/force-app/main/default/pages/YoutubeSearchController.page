@@ -1,0 +1,30 @@
+<apex:page controller="SearchYoutube_Con">
+    
+    <apex:form >
+        <apex:inputText value="{!searchText}"/>
+        
+        <apex:commandButton value="Search" action="{!search}" reRender="out"/>	
+    </apex:form>
+    
+    <apex:outputPanel id="out">
+        <table>
+            <tr>
+                <th>Thumbnail</th>	
+                <th>Title</th>
+                <th>Description</th>
+                <th>Published At</th>
+            </tr>
+            <apex:repeat value="{!dataSet}" var="video">
+                
+                <tr>
+                    <td><apex:image url="{!video.f3}" height="100" width="100"/></td>
+                    <td><apex:outputText >{!video.f1}</apex:outputText></td>
+                    <td><apex:outputText >{!video.f2}</apex:outputText></td>
+                    <td><apex:outputText >{!video.f4}</apex:outputText></td>
+                </tr>
+                
+            </apex:repeat>
+        </table>
+    </apex:outputPanel>
+    
+</apex:page>

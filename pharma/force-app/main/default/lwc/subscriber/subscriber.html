@@ -1,0 +1,28 @@
+<template>
+            <lightning-card  title="Product Description" icon-name="custom:custom57">
+                <template if:true={bool}>
+                    <h1 style="text-align: center; font-weight: bold; font-size:50px;" >{name}</h1>
+                <div style="display: flex;" class="slds-m-around_small">
+                    
+                        <div  >
+
+                            Inventory left : <p class="firstClass" >{inventory}</p>  <br/>
+                            Price : <p class="firstClass"  >{price}</p> <br/>
+                            Product Type  : <p class="firstClass"   >{product}</p>
+                               
+                        </div>
+                        <div style="margin-left: 40px;" >
+                            <img class="firstClass" src={image} width="200" height="150"   />
+                        </div>
+                    
+                    
+                    
+                </div>
+                </template>
+                <template if:false={bool}>
+                    <h1 style="text-align: center; font-weight: bold; font-size:20px;" >Choose the Product</h1>
+                </template>
+            </lightning-card>
+        
+    
+</template>

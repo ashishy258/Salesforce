@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Physician's Locations" icon-name="action:map" >
+        <c-map-search onsearch={handleEvent}></c-map-search>
+        <lightning-map 
+            map-markers={mapMarkers}
+            markers-title={markersTitle}
+            zoom-level={zoomLevel}>
+        </lightning-map> 
+    </lightning-card>  
+</template>

@@ -1,0 +1,24 @@
+<template>
+    <template if:true={drugRecord}>
+        <a style="text-decoration: none;" onclick={handleClick} >
+            <lightning-card class="firstClass"  title={drugRecord.Name}>
+                <div class="slds-m-around_small" style="display: flex;">
+                    
+                        <div style="width: 60%;" >
+
+                            Inventory left : <p class="firstClass" >{drugRecord.inventory_left__c}</p>  <br/>
+                            Price : <p class="firstClass"  >{drugRecord.price__c}</p> <br/>
+                            Product Type  : <p class="firstClass"   >{drugRecord.product_type__c}</p>
+                               
+                        </div>
+                        <div style="width: 40%;" >
+                            <img class="firstClass" src={drugRecord.image__c} width="200" height="150"   />
+                        </div>
+                    
+                    
+                    
+                </div>
+            </lightning-card>
+        </a>
+    </template>
+</template>

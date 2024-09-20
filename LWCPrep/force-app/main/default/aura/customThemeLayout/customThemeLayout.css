@@ -1,0 +1,11 @@
+.THIS {
+    position: relative;
+    z-index: 1;
+}
+
+.THIS .navigation{
+    background-color: orange;
+}
+
+.THIS .mainContentArea{
+}

@@ -1,0 +1,18 @@
+<template>
+    <div class="slds-size_3-of-4">
+        <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+            <lightning-card title="To Do List" icon-name="standard:action_list_component">
+                    <lightning-input class="input slds-var-p-around_medium" onchange={handleInput} type="text" variant="standard" placeholder="type here..."></lightning-input>
+                    <lightning-button slot="actions" variant="brand" label="Add" onclick={handleAdd}></lightning-button>
+                <div>
+                    <ul>
+                        
+                    </ul>
+                    
+                </div>  
+
+            </lightning-card>
+        </div>
+    </div>
+    
+</template>

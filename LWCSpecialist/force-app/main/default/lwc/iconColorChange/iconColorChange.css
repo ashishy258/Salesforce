@@ -1,0 +1,4 @@
+.yellow-icon{
+    --sds-c-icon-color-foreground-default: white;
+    --sds-c-icon-color-background: grey;
+}

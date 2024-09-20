@@ -1,0 +1,8 @@
+:host {
+    min-width:430px;
+    max-width:620px;
+}
+
+.card-body {
+    background-color: yellow;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <formulas>
+        <name>Test</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <formulas>
+        <name>Test2</name>
+        <dataType>String</dataType>
+        <expression>TEXT(TODAY())</expression>
+    </formulas>
+    <formulas>
+        <name>Test3</name>
+        <dataType>String</dataType>
+        <expression>TEXT(TODAY())+&quot; 24:00:00&quot;</expression>
+    </formulas>
+    <formulas>
+        <name>Test4</name>
+        <dataType>DateTime</dataType>
+        <expression>DATETIMEVALUE(TEXT(TODAY())+&quot; 00:00:00&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>Test5</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 00:00:00&quot;))</expression>
+    </formulas>
+    <formulas>
+        <name>Test6</name>
+        <dataType>Number</dataType>
+        <expression>(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 00:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 01:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 02:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 03:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 04:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 05:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 06:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 07:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 08:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 09:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 10:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 11:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 12:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 13:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 14:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 15:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 16:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 17:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 18:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 19:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 20:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 21:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 22:00:00&quot;)) - TODAY()) + 
+(DATEVALUE(DATETIMEVALUE(TEXT(TODAY())+&quot; 23:00:00&quot;)) - TODAY())</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>test send email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>test send email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Send_mail</name>
+        <label>Send mail</label>
+        <locationX>176</locationX>
+        <locationY>180</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>testDP</name>
+            <fieldText>&lt;p&gt;{!Test}&lt;/p&gt;&lt;p&gt;{!Test2}&lt;/p&gt;&lt;p&gt;{!Test3}&lt;/p&gt;&lt;p&gt;{!Test4}&lt;/p&gt;&lt;p&gt;{!Test5}&lt;/p&gt;&lt;p&gt;{!Test6}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Send_mail</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>subject</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Subject here</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>Text</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>&quot;Ashish&quot;</stringValue>
+        </value>
+    </variables>
+</Flow>

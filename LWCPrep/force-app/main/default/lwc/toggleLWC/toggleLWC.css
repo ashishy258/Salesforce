@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Amazon Ember";
+    src: url('/resource/SFSC_SR/SFSC_SR/fonts/AmazonEmberDisplay_Rg.ttf') format('TrueType');
+}
+
+:host {
+    --slds-c-button-brand-font-family: 'Amazon Ember';
+    --slds-c-button-brand-font-style: normal;
+    --slds-c-button-brand-color: #fff;
+    --slds-c-button-brand-color-background: #0176d3;
+    --slds-c-button-brand-color-border: #0176d3;
+    --slds-c-button-text-font-family: 'Amazon Ember';
+    --slds-c-button-text-font-style: normal;
+    --slds-c-button-text-color: #0176d3;
+    --slds-c-button-brand-color-background-hover: #014486;
+    --slds-c-button-brand-color-border-hover: #014486;
+    --slds-c-button-brand-text-color-hover: #ffffff;
+    --slds-c-button-neutral-color-background-hover: #f3f3f3;
+    --slds-c-button-neutral-color-border-hover: #c9c9c9;
+    --slds-c-button-text-color-hover: #014486;
+    --slds-c-button-brand-color-background-active: #014486;
+    --slds-c-button-brand-color-border-active: #014486;
+    --slds-c-button-brand-text-color-active: white;
+    --slds-c-button-neutral-color-background-active: #f3f3f3;
+    --slds-c-button-neutral-color-border-active: #c9c9c9;
+    --slds-c-button-text-color-active: #014486;
+    --slds-c-button-color-border-active: #014486; 
+    --slds-c-button-brand-spacing-inline-end: 1rem;
+    --slds-c-button-brand-spacing-inline-start: 1rem;
+    
+    --slds-c-card-sizing-border: 0px;
+    --slds-c-card-footer-text-align: left;
+}
+
+.slds-popover__body, .slds-card__body {
+    padding: 0px;
+}
+
+.dropdownSection {
+    position: relative;
+}
+
+.dropdownSectionContent {
+    position: absolute;
+    right: 0;
+    margin-top: 2.6rem;
+}
+
+.alignRight {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.alignLeft {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+
+.bookmarkIcon {
+    --slds-c-icon-color-foreground-default: #0176d3;
+}
+
+.saveButton {
+    font-size: 1.125rem;
+}
+
+.dropdownButton {
+    font-size: 1.125rem;
+    height: 2.025rem;
+}
+
+li:hover {
+    background-color: #f3f3f3;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.header {
+    font-family: 'Amazon Ember';
+    font-weight: 200;
+    font-size: 1rem;
+    color: #767676;
+}
+
+.section-content {
+    font-family: 'Amazon Ember';
+    word-wrap: break-word;
+    max-height: 10.5rem;
+    font-size: 0.8125rem;
+}
+
+.footer {
+    font-family: 'Amazon Ember';
+    font-weight: 400;
+    font-size: 0.8125rem;
+    color: black;
+    background-color: #f3f3f3;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer:hover {
+    text-decoration: underline;
+}
+
+.showPointer {
+    cursor:pointer;
+}

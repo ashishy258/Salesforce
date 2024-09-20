@@ -1,0 +1,13 @@
+<aura:component implements="forceCommunity:themeLayout" access="global" description="Sample Custom Theme Layout">
+    <aura:attribute name="blueBackground" type="Boolean" default="false"/> 
+    <aura:attribute name="smallLogo" type="Boolean" default="false" />
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <div class="parentContainer">
+        <div class="navigation">
+            <c:customNav></c:customNav>
+        </div>
+        <div class="mainContentArea">
+            {!v.body}
+        </div>
+    </div>
+</aura:component>
